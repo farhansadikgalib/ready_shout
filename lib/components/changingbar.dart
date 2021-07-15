@@ -3,6 +3,7 @@ import 'package:ready_shout/constants.dart';
 import 'package:ready_shout/screens/Crop1/Text_Crop_Screen.dart';
 import 'package:ready_shout/screens/Crop2/Crop_Screen.dart';
 import 'package:ready_shout/screens/Crop3/Cut_Screen.dart';
+import 'package:rounded_tabbar_widget/rounded_tabbar_widget.dart';
 
 class Changingbar extends StatefulWidget {
 
@@ -20,13 +21,7 @@ class _ChangingbarState extends State<Changingbar> with SingleTickerProviderStat
     _tabController = TabController(initialIndex: 0, length: 3, vsync: this);
   }
 
-  List<Widget> _widgetOptions = <Widget>[
 
-    CropScreen(),
-  TextCropScreen(),
-    CutScreen()
-
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -36,6 +31,18 @@ class _ChangingbarState extends State<Changingbar> with SingleTickerProviderStat
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            // Expanded(child: TabBarView(
+            //     controller: _tabController,
+            //     children: [
+            //       // first tab bar view widget
+            //
+            //       CropScreen(),
+            //       TextCropScreen(),
+            //       CutScreen(),
+            //
+            //     ]
+            // )),
+
             TabBar(
               controller: _tabController,
               labelColor: kPrimaryColor,
@@ -100,6 +107,9 @@ class _ChangingbarState extends State<Changingbar> with SingleTickerProviderStat
                 ),
               ],
             ),
+
+
+
           ],
         ),
       ),

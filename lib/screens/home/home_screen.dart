@@ -2,6 +2,7 @@ import 'package:dot_navigation_bar/dot_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:ready_shout/screens/Archive/archive_screen.dart';
 import 'package:ready_shout/screens/Crop2/Crop_Screen.dart';
+import 'package:ready_shout/screens/Test/editable.dart';
 import 'package:ready_shout/screens/profile/profilescreen.dart';
 
 import 'components/body.dart';
@@ -29,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
      List<Widget> _widgetOptions = <Widget>[
        FullScreen(),
        ArchiveScreen(),
-       CropScreen(),
+       Editable(),
        ProfilefillScreen(),
 
      ];

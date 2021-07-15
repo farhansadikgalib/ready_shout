@@ -22,50 +22,50 @@ class FullScreen extends StatelessWidget {
             SizedBox(height: getProportionateScreenWidth(15)),
             Other(),
             SizedBox(height: getProportionateScreenWidth(30)),
-            Padding(
-              padding: const EdgeInsets.only(left: 18.0, top: 75),
-              child: Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(top: 8.0,right: 10),
-                    child: Container(
-
-                       decoration: BoxDecoration(
-                         color: Color(0xFFAFB4C6),
-                           borderRadius: BorderRadius.all(Radius.circular(8),),
-                       ),
-                        height: 46,
-                        width: 59,
-                        child: Center(
-                          child: SvgPicture.asset(
-                           "icons/cropcross.svg",
-                          height:15,
-                          width: 15,),
-                        ),
-                            ),
-                  ),
-                  Changingbar(),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 8.0, left: 7),
-                    child: Container(
-
-                        decoration: BoxDecoration(
-                          color: kPrimaryColor,
-                          borderRadius: BorderRadius.all(Radius.circular(8),),
-                        ),
-                        height: 46,
-                        width: 59,
-                        child: Center(
-                          child: SvgPicture.asset(
-                            "icons/tixk.svg",
-                            height:15,
-                            width: 15,),
-                        ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
+            // Padding(
+            //   padding: const EdgeInsets.only(left: 18.0, top: 75),
+            //   child: Row(
+            //     children: [
+            //       Padding(
+            //         padding: const EdgeInsets.only(top: 8.0,right: 10),
+            //         child: Container(
+            //
+            //            decoration: BoxDecoration(
+            //              color: Color(0xFFAFB4C6),
+            //                borderRadius: BorderRadius.all(Radius.circular(8),),
+            //            ),
+            //             height: 46,
+            //             width: 59,
+            //             child: Center(
+            //               child: SvgPicture.asset(
+            //                "icons/cropcross.svg",
+            //               height:15,
+            //               width: 15,),
+            //             ),
+            //                 ),
+            //       ),
+            //       Changingbar(),
+            //       Padding(
+            //         padding: const EdgeInsets.only(top: 8.0, left: 7),
+            //         child: Container(
+            //
+            //             decoration: BoxDecoration(
+            //               color: kPrimaryColor,
+            //               borderRadius: BorderRadius.all(Radius.circular(8),),
+            //             ),
+            //             height: 46,
+            //             width: 59,
+            //             child: Center(
+            //               child: SvgPicture.asset(
+            //                 "icons/tixk.svg",
+            //                 height:15,
+            //                 width: 15,),
+            //             ),
+            //         ),
+            //       ),
+            //     ],
+            //   ),
+            // ),
           ],
         ),
       ),
